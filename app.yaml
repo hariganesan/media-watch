@@ -1,0 +1,10 @@
+api_version: 1
+application: media-watch
+handlers:
+- {script: api.app, url: /}
+module: default
+runtime: python27
+version: 1
+threadsafe: true
+libraries:
+- {name: webapp2, version: latest}

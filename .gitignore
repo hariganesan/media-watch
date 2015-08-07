@@ -34,6 +34,10 @@ build/
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
 
+
+# python compiled files
+*.pyc
+
 # sublime settings
 *.sublime-*
 
