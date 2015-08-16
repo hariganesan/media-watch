@@ -1,6 +1,82 @@
 <html>
-  <head></head>
+  <head>
+    <style>
+      body {
+        background-color: #324;
+        color: #fff;
+      }
+      ul {
+        list-style: none;
+      }
+      .hidden {
+        display: none;
+      }
+      .circle {
+        border-radius: 50%;
+      }
+      .center {
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      #user-picture {
+        height: 100px;
+        width: 100px;
+        background-color: #fff;
+        margin: 10px auto;
+      }
+      #user-name {
+        margin: 10px auto;
+      }
+      .media-container {
+        width: 650px;
+      }
+      .media-list {
+        width: 300px;
+        margin: 5px;
+        padding: 10px;
+        float: left;
+      }
+      .media-list li {
+        background-color: #435;
+        margin: 10px auto;
+        padding: 15px 20px;
+        font-size: 18px;
+        text-align: left;
+      }
+
+      .media-list li:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
   <body>
-    <div id=""
+    <div id="user-container" class="center">
+      <div id="user-picture" class="circle center"></div>
+      <div id="user-stats" class="hidden circle"></div>
+      <div id="user-name" class="center">John Smith</div>
+    </div>
+
+    <div id="media-container" class="center">
+      <ul id="media-past" class="media-list">
+        <li><span class="item-title">Past item 1</span><span class="hidden item-stats">Info about item 1</span></li>
+        <li>Past item 2</li>
+      </ul>
+      <ul id="media-future" class="media-list">
+        <li>Future item 1</li>
+        <li>Future item 2</li>
+        <li>Future item 3</li>
+      </ul>
+    </div>
+
+  <script>
+    var lists = document.getElementsByClassName("media-list");
+    for (list in lists) {
+      for (child in list.children) {
+        child.attr["onclick"] = function() {alert("hi")};
+        console.log(child);
+      }
+    }
+  </script>
   </body>
 </html>
