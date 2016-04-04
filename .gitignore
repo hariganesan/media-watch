@@ -41,5 +41,8 @@ build/
 # sublime settings
 *.sublime-*
 
+# os x temp
+*.DS_Store
+
 # development logs
 /log/development.log
