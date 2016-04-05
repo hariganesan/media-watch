@@ -1,0 +1,16 @@
+@import 'base';
+
+h1 {
+  font-size: 50px;
+}
+
+#splash {
+  background-color: $black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#splash-header {
+  color: $off-white;
+}
